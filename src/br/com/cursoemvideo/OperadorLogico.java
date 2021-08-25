@@ -83,7 +83,7 @@ public class OperadorLogico {
 				int ano=Integer.parseInt(txtAno.getText());
 				int idade=2021-ano;
 				lblIdade.setText(Integer.toString(idade));
-				String situacao=(idade>=18)?"maior de idade":"menor de idade";
+				String situacao=((idade>=16 && idade <18) ||idade>70)?"voto opcional":"voto obrigatório";
 				lblSituacao.setText(situacao);
 			}
 		});
